@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 //import SmartImage from "./SmartImage";
 import FavoritoBtn from "../components/FavoritoBtn";
-import Image from "next/image";
+import SmartImage from "../components/SmartImage";
 
 const Favoritos = () => {
   const favoritos = useSelector((state) => state.favorites);
@@ -26,7 +26,7 @@ const Favoritos = () => {
             key={index}
             className={`${darkMode ? "bg-gray-800 border-gray-700 text-white" : "bg-white border-gray-200 text-gray-900"} shadow-sm rounded-md overflow-hidden hover:shadow-lg transition`}
           >
-            <Image
+            <SmartImage
               width={500}
               height={500}
               src={noticia.urlToImage}
