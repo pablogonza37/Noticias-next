@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useSelector } from "react-redux";
-//import SmartImage from "./SmartImage";
 import FavoritoBtn from "../components/FavoritoBtn";
 import SmartImage from "../components/SmartImage";
 
