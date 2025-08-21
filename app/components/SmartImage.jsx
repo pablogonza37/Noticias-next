@@ -22,6 +22,7 @@ const SmartImage = ({ src, alt, width = 600, height = 1000, className }) => {
       width={width}
       height={height}
       className={className}
+      priority
     />
   );
 };

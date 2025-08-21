@@ -1,8 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { fetchSourcesApi, fetchNoticiasApi } from "../api/newsApi";
-import Image from "next/image";
-import FavoritoBtn from "./FavoritoBtn";
 import DarkModeToggle from "./DarkModeToggle";
 import SmartImage from "./SmartImage";
 import { useSelector } from "react-redux";
@@ -76,7 +74,7 @@ const Noticias = () => {
 <section className="mb-12 relative">
   <SmartImage
     width={1224}
-    height={600}
+    //height={600}
     src={noticias[0].urlToImage}
     alt={noticias[0].title}
     className="object-cover w-full h-[600px] grayscale hover:grayscale-0 transition duration-500 rounded-md"
@@ -110,7 +108,7 @@ const Noticias = () => {
                 >
                   <SmartImage
                     width={500}
-                    height={500}
+                    //height={500}
                     src={noticia.urlToImage}
                     alt={noticia.title}
                     className="object-cover w-full h-60 grayscale hover:grayscale-0 transition duration-500"
@@ -129,9 +127,7 @@ const Noticias = () => {
                     >
                       Leer más →
                     </a>
-                    <div className="mt-3">
-                      <FavoritoBtn noticia={noticia} />
-                    </div>
+                    
                   </div>
                 </article>
               ))}

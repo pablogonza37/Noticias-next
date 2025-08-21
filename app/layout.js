@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers> {/* ✅ Ahora Redux vive en Client Component */}
+        <Providers> 
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
